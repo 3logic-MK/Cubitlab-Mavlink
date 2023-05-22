@@ -13,6 +13,7 @@
                 <description>Take exclusive ownership of an UXV</description>
                 <param index="1">ID of the Ground Control Station getting the ownership.</param>
                 <param index="2">ID of the UXV to take control of.</param>
+            </entry>
         </enum>
     </enums>
 
