@@ -31,11 +31,11 @@
 		</enum>
 		<enum name="FUEL_LEVEL">
 			<description>Percentage of fuel level.</description>
-			<entry value="100" name="FULL"></entry>
-			<entry value="75" name="HIGH"></entry>
-			<entry value="50" name="MEDIUM"></entry>
-			<entry value="25" name="LOW"></entry>
 			<entry value="0" name="EMPTY"></entry>
+			<entry value="75" name="HIGH"></entry>
+			<entry value="25" name="LOW"></entry>
+			<entry value="50" name="MEDIUM"></entry>
+			<entry value="100" name="FULL"></entry>
 		</enum>
 		<enum name="VERONTE_ERROR">
 			<description>Codici di errore del UAV Veronte</description>
@@ -59,7 +59,7 @@
 			<field type="float" name="temperature" units="°C">Temperatura del motore</field>
 			<field type="int64_t" name="MissionTime" units="s">TNumero di secondi trascorsi dall’avvio della missione (si considera a partire dal decollo)</field>
 			<field type="int64_t" name="WPTime" units="s">Numero di secondi trascorsi dall’attraversamento dell’ultimo Waypoint</field>
-			<field type="FUEL_LEVEL" name="fuelStatus">Stato del serbatoio dell'UAV</field>
+			<field type="uint32_t" enum="FUEL_LEVEL" name="fuelStatus" units="%">Stato del serbatoio dell'UAV</field>
 		</message>
 		<message id="12001" name="VERONTE_RADIO_STATUS">
 			<description>Veronte UXV radio status information.</description>
