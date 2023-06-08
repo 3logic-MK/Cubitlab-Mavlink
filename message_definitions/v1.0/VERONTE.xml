@@ -13,6 +13,28 @@
 			<entry value="0b01000000" name="MAV_TYPE_YAAI_FLAG__EV3"></entry>
 			<entry value="0b01100000" name="MAV_TYPE_YAAI_FLAG__SPHERO"></entry>
 		</enum>
+		<enum name="MAV_VERONTE_MODE">
+			<description>YAAI sub types.</description>
+			<entry value="0" name="MAV_MODE_PREFLIGHT"></entry>
+			<entry value="24" name="MAV_MODE_AUTO"></entry>
+			<entry value="66" name="MAV_MODE_MANUAL"></entry>
+			<entry value="82" name="MAV_MODE_ARCADE"></entry>
+			<entry value="83" name="MAV_MODE_SEMIARCADE"></entry>
+		</enum>
+		<enum name="MAV_VERONTE_CUSTOM_MODE">
+			<description>YAAI sub types.</description>
+			<entry value="0" name="NAVE_CUSTOM_MODE_STANDBY"></entry>
+			<entry value="1" name="NAVE_CUSTOM_MODE_DIAGNOSTIC"></entry>
+			<entry value="2" name="NAVE_CUSTOM_MODE_HOVER"></entry>
+			<entry value="3" name="NAVE_CUSTOM_MODE_TAKE_OFF"></entry>
+			<entry value="4" name="NAVE_CUSTOM_MODE_LANDING"></entry>
+			<entry value="5" name="NAVE_CUSTOM_MODE_CRUISE"></entry>
+			<entry value="6" name="NAVE_CUSTOM_MODE_HOLD"></entry>
+			<entry value="7" name="NAVE_CUSTOM_MODE_READY"></entry>
+			<entry value="8" name="NAVE_CUSTOM_MODE_RTH"></entry>
+			<entry value="9" name="NAVE_CUSTOM_MODE_LOITER"></entry>
+			<entry value="12" name="NAVE_CUSTOM_MODE_PREFLIGHT"></entry>
+		</enum>
 		<enum name="MAV_YAAI_SUBTYPE">
 			<description>YAAI sub types.</description>
 			<entry value="0b00000001" name="MAV_TYPE_YAAI_FLAG__QUAD"></entry>
@@ -26,6 +48,7 @@
 			<entry value="2" name="MAV_CUSTOMMODE_YAAI__FACE"></entry>
 		</enum>
 		<enum name="MAV_AUTOPILOT">
+			<entry value="115" name="MAV_AUTOPILOT_VERONTE"></entry>
 			<entry value="117" name="MAV_AUTOPILOT_YAAY"></entry>
 		</enum>
 		<enum name="FUEL_LEVEL">
