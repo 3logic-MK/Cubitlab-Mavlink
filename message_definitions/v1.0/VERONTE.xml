@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <mavlink>
-<enums>
+	<enums>
 		<enum name="MAV_YAAI_STATUS_SENSOR">
 			<description>YAAI sensor status.</description>
 			<entry value="0b00000001" name="MAV_YAAI_SENSOR_TEMPERATURE"></entry>
