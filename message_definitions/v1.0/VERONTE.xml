@@ -15,11 +15,11 @@
 		</enum>
 		<enum name="MAV_VERONTE_MODE">
 			<description>YAAI sub types.</description>
-			<entry value="0" name="MAV_MODE_PREFLIGHT"></entry>
-			<entry value="24" name="MAV_MODE_AUTO"></entry>
-			<entry value="66" name="MAV_MODE_MANUAL"></entry>
-			<entry value="82" name="MAV_MODE_ARCADE"></entry>
-			<entry value="83" name="MAV_MODE_SEMIARCADE"></entry>
+			<entry value="0" name="NAVE_MODE_PREFLIGHT"></entry>
+			<entry value="24" name="NAVE_MODE_AUTO"></entry>
+			<entry value="66" name="NAVE_MODE_MANUAL"></entry>
+			<entry value="82" name="NAVE_MODE_ARCADE"></entry>
+			<entry value="83" name="NAVE_MODE_SEMIARCADE"></entry>
 		</enum>
 		<enum name="MAV_VERONTE_CUSTOM_MODE">
 			<description>YAAI sub types.</description>
