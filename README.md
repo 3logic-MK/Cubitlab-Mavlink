@@ -13,3 +13,46 @@ Key Links:
 * [Discussion/Support](https://mavlink.io/en/#support) (Slack)
 * [Contributing](https://mavlink.io/en/contributing/contributing.html)
 * [License](https://mavlink.io/en/#license)
+
+
+## 3logic instruction ##
+
+Scaricare il repository git ed effettuare il checkout della versione Cubitlab:  
+```
+git clone git@github.com:3logic-MK/Cubitlab-Mavlink.git --recursive  
+git checkout cubitlab
+```
+### Generazione libreria per Python ###
+
+Spostarsi nella cartella **message_definition** e scegliere il template corretto:
+```
+cd message_definition/v1.0
+cp VERONTE.python.xml VERONTE.xml
+```
+modificare il file **common.xml** eliminando la riga:
+```
+<include>VERONTE.xml</include>
+```
+Tornare nella cartella principale ed utilizzare mavgen per generare la libreria contenente il dialetto:
+```
+python3 -m pymavlink.tools.mavgen --lang=Python --wire-protocol=2.0 --output=VERONTE.py message_definitions/v1.0/VERONTE.xml
+```
+Copiare la libreria VERONTE.py appena generata con mavgen nele cartelle pymavlink/dialects/v20 e pymavlink/dialects/v10
+```
+cp VERONTE.py pymavlink/dialects/v10
+cp VERONTE.py pymavlink/dialects/v20
+```
+Utilizzare la cartella pymavlink appena creata all'interno dei propri progetti.  
+  
+  
+  
+
+### Generazione libreria per C/C++ ###
+
+Spostarsi nella cartella **message_definition**e  scegliere il template corretto:
+```
+cd message_definition/v1.0
+cp VERONTE.c.xml VERONTE.xml
+```
+
+to be completed...
