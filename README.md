@@ -24,9 +24,9 @@ git checkout cubitlab
 ```
 ### Generazione libreria per Python ###
 
-Spostarsi nella cartella **message_definition** e scegliere il template corretto:
+Spostarsi nella cartella **message_definitions** e scegliere il template corretto:
 ```
-cd message_definition/v1.0
+cd message_definitions/v1.0
 cp VERONTE.python.xml VERONTE.xml
 ```
 modificare il file **common.xml** eliminando la riga:
@@ -49,9 +49,9 @@ Utilizzare la cartella pymavlink appena creata all'interno dei propri progetti.
 
 ### Generazione libreria per C/C++ ###
 
-Spostarsi nella cartella **message_definition**e  scegliere il template corretto:
+Spostarsi nella cartella **message_definitions**e  scegliere il template corretto:
 ```
-cd message_definition/v1.0
+cd message_definitions/v1.0
 cp VERONTE.c.xml VERONTE.xml
 ```
 
