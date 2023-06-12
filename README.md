@@ -45,14 +45,9 @@ cp VERONTE.py pymavlink/dialects/v20
 Utilizzare la cartella pymavlink appena creata all'interno dei propri progetti.  
   
   
-  
+
 
 ### Generazione libreria per C/C++ ###
 
-Spostarsi nella cartella **message_definitions**e  scegliere il template corretto:
-```
-cd message_definitions/v1.0
-cp VERONTE.c.xml VERONTE.xml
-```
-
-to be completed...
+La generazione della libreria MAVLINK per c/c++ avviene in un altro repositori che copia automaticamente i contenuti di questo durante la compilazione.
+è necessario quindi che il template per c/c++ sia quello nominato "VERONTE.xml".
