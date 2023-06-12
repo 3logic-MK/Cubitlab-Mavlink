@@ -81,7 +81,7 @@
 			<field type="float" name="temperature" units="°C">Temperatura del motore</field>
 			<field type="int64_t" name="MissionTime" units="s">TNumero di secondi trascorsi dall’avvio della missione (si considera a partire dal decollo)</field>
 			<field type="int64_t" name="WPTime" units="s">Numero di secondi trascorsi dall’attraversamento dell’ultimo Waypoint</field>
-			<field type="uint32_t" enum="FUEL_LEVEL" name="fuelStatus" units="%">Stato del serbatoio dell'UAV</field>
+			<field type="uint8_t" enum="FUEL_LEVEL" name="fuelStatus" units="%">Stato del serbatoio dell'UAV</field>
 		</message>
 		<message id="12001" name="VERONTE_RADIO_STATUS">
 			<description>Veronte UXV radio status information.</description>
