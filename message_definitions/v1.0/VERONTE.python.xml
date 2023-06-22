@@ -14,7 +14,7 @@
 			<entry value="0b01100000" name="MAV_TYPE_YAAI_FLAG__SPHERO"></entry>
 		</enum>
 		<enum name="MAV_VERONTE_MODE">
-			<description>YAAI sub types.</description>
+			<description>YAAI modes.</description>
 			<entry value="0" name="NAVE_MODE_PREFLIGHT"></entry>
 			<entry value="24" name="NAVE_MODE_AUTO"></entry>
 			<entry value="66" name="NAVE_MODE_MANUAL"></entry>
@@ -22,7 +22,7 @@
 			<entry value="83" name="NAVE_MODE_SEMIARCADE"></entry>	
 		</enum>
 		<enum name="MAV_VERONTE_CUSTOM_MODE">
-			<description>YAAI sub types.</description>
+			<description>YAAI custom modes.</description>
 			<entry value="0" name="NAVE_CUSTOM_MODE_STANDBY"></entry>
 			<entry value="1" name="NAVE_CUSTOM_MODE_DIAGNOSTIC"></entry>
 			<entry value="2" name="NAVE_CUSTOM_MODE_HOVER"></entry>
