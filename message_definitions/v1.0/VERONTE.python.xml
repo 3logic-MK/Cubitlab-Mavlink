@@ -97,7 +97,7 @@
 			<description>Nave status.</description>
 			<field type="uint16_t" name="placeholder" units="rpm">placeholder</field>
 		</message>
-		<message id="12005" name="VERONTE_CALIBRATED">
+		<message id="12005" name="VERONTE_CALIBRATION_RESULT">
 			<description>UAVs calibration result.</description>
 			<field type="int8_t" name="result">Calibration result.</field>
 		</message>
