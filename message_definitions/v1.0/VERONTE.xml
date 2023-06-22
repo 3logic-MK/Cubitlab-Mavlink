@@ -19,7 +19,7 @@
 			<entry value="24" name="NAVE_MODE_AUTO"></entry>
 			<entry value="66" name="NAVE_MODE_MANUAL"></entry>
 			<entry value="82" name="NAVE_MODE_ARCADE"></entry>
-			<entry value="83" name="NAVE_MODE_SEMIARCADE"></entry>
+			<entry value="83" name="NAVE_MODE_SEMIARCADE"></entry>	
 		</enum>
 		<enum name="MAV_VERONTE_CUSTOM_MODE">
 			<description>YAAI sub types.</description>
@@ -96,6 +96,10 @@
 		<message id="12004" name="VERONTE_NAVE_STATUS">
 			<description>Nave status.</description>
 			<field type="uint16_t" name="placeholder" units="rpm">placeholder</field>
+		</message>
+		<message id="12005" name="VERONTE_CALIBRATED">
+			<description>UAVs calibration result.</description>
+			<field type="int8_t" name="result">Calibration result.</field>
 		</message>
 	</messages>
 </mavlink>
