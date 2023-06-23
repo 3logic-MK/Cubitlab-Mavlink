@@ -14,7 +14,7 @@
 			<entry value="0b01100000" name="MAV_TYPE_YAAI_FLAG__SPHERO"></entry>
 		</enum>
 		<enum name="MAV_VERONTE_MODE">
-			<description>YAAI modes.</description>
+			<description>VERONTE modes.</description>
 			<entry value="0" name="NAVE_MODE_PREFLIGHT"></entry>
 			<entry value="24" name="NAVE_MODE_AUTO"></entry>
 			<entry value="66" name="NAVE_MODE_MANUAL"></entry>
@@ -22,7 +22,7 @@
 			<entry value="83" name="NAVE_MODE_SEMIARCADE"></entry>	
 		</enum>
 		<enum name="MAV_VERONTE_CUSTOM_MODE">
-			<description>YAAI custom modes.</description>
+			<description>VERONTE custom modes.</description>
 			<entry value="0" name="NAVE_CUSTOM_MODE_STANDBY"></entry>
 			<entry value="1" name="NAVE_CUSTOM_MODE_DIAGNOSTIC"></entry>
 			<entry value="2" name="NAVE_CUSTOM_MODE_HOVER"></entry>
@@ -49,7 +49,7 @@
 		</enum>
 		<enum name="MAV_AUTOPILOT">
 			<entry value="115" name="MAV_AUTOPILOT_VERONTE"></entry>
-			<entry value="117" name="MAV_AUTOPILOT_YAAY"></entry>
+			<entry value="117" name="MAV_AUTOPILOT_YAAI"></entry>
 		</enum>
 		<enum name="FUEL_LEVEL">
 			<description>Percentage of fuel level.</description>
@@ -79,13 +79,13 @@
 			<description>Veronte UAV information.</description>
 			<field type="uint16_t" name="rpm" units="rpm">Engine RPM</field>
 			<field type="float" name="temperature" units="°C">Temperatura del motore</field>
-			<field type="int64_t" name="MissionTime" units="s">TNumero di secondi trascorsi dall’avvio della missione (si considera a partire dal decollo)</field>
+			<field type="int64_t" name="MissionTime" units="s">Numero di secondi trascorsi dall’avvio della missione (si considera a partire dal decollo)</field>
 			<field type="int64_t" name="WPTime" units="s">Numero di secondi trascorsi dall’attraversamento dell’ultimo Waypoint</field>
 			<field type="uint8_t" enum="FUEL_LEVEL" name="fuelStatus" units="%">Stato del serbatoio dell'UAV</field>
 		</message>
 		<message id="12001" name="VERONTE_RADIO_STATUS">
 			<description>Veronte UXV radio status information.</description>
-			<field type="uint16_t" name="placeholder" units="rpm">placeholder</field>
+			<field type="uint16_t" name="placeholder" units="placeholder">placeholder</field>
 		</message>
 		<message id="12002" name="VERONTE_ERROR">
 			<description>Veronte UAV error information.</description>
@@ -95,11 +95,16 @@
 		</message>
 		<message id="12004" name="VERONTE_NAVE_STATUS">
 			<description>Nave status.</description>
-			<field type="uint16_t" name="placeholder" units="rpm">placeholder</field>
+			<field type="uint16_t" name="placeholder" units="placeholder">placeholder</field>
 		</message>
 		<message id="12005" name="VERONTE_CALIBRATION_RESULT">
 			<description>UAVs calibration result.</description>
 			<field type="int8_t" name="result">Calibration result.</field>
+		</message>
+		<message id="12100" name="YAAI_STATUS">
+			<description>Veronte UAV information.</description>
+			<field type="int64_t" name="BootTime" units="s">Numero di secondi trascorsi dall’avvio</field>
+			<field type="int64_t" name="ARMTime" units="s">Numero di secondi trascorsi dall'invio del comando ARM</field>
 		</message>
 	</messages>
 </mavlink>
