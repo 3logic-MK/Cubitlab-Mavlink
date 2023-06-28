@@ -66,7 +66,7 @@
 			</entry>
 		</enum>
 		<enum name="MAV_CMD">
-			<description>Commands to be executed by the MAV. They can be executed on user request, or as part of a mission script. If the action is used in a mission, the parameter mapping to the waypoint/mission message is as follows: Param 1, Param 2, Param 3, Param 4, X: Param 5, Y:Param 6, Z:Param 7. This command list is similar what ARINC 424 is for commercial aircraft: A data format how to interpret waypoint or mission data.</description>
+			<description>Commands to be executed by the MAV. They can be executed on user request, or as part of a mission script. If the action is used in a mission, the parameter mapping to the waypoint or mission message is as follows: Param 1, Param 2, Param 3, Param 4, X: Param 5, Y:Param 6, Z:Param 7. This command list is similar what ARINC 424 is for commercial aircraft: A data format how to interpret waypoint or mission data.</description>
 			<entry value="12003" name="VERONTE_CMD_DO_TAKE_UXV_OWNERSHIP">
 				<description>Take exclusive ownership of an UXV</description>
 				<param index="1">ID of the Ground Control Station getting the ownership.</param>
@@ -89,7 +89,7 @@
 		</message>
 		<message id="12002" name="VERONTE_ERROR">
 			<description>Veronte UAV error information.</description>
-			<field type="uint8_t" name="target_system">Sistema che ha sollevato l'errore</field>
+			<field type="uint8_t" name="target_system">Sistema che ha sollevato errore</field>
 			<field type="float" name="message">Messaggio di errore</field>
 			<field type="uint8_t" name="error" enum="VERONTE_ERROR">Codice errore.</field>
 		</message>
