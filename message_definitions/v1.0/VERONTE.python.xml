@@ -67,7 +67,7 @@
 			</entry>
 		</enum>
 		<enum name="MAV_CMD">
-			<description>Commands to be executed by the MAV. They can be executed on user request, or as part of a mission script. If the action is used in a mission, the parameter mapping to the waypoint/mission message is as follows: Param 1, Param 2, Param 3, Param 4, X: Param 5, Y:Param 6, Z:Param 7. This command list is similar what ARINC 424 is for commercial aircraft: A data format how to interpret waypoint/mission data.</description>
+			<description>Commands to be executed by the MAV. They can be executed on user request, or as part of a mission script. If the action is used in a mission, the parameter mapping to the waypoint or mission message is as follows: Param 1, Param 2, Param 3, Param 4, X: Param 5, Y:Param 6, Z:Param 7. This command list is similar what ARINC 424 is for commercial aircraft: A data format how to interpret waypoint or mission data.</description>
 			<entry value="12003" name="VERONTE_CMD_DO_TAKE_UXV_OWNERSHIP">
 				<description>Take exclusive ownership of an UXV</description>
 				<param index="1">ID of the Ground Control Station getting the ownership.</param>
@@ -80,8 +80,8 @@
 			<description>Veronte UAV information.</description>
 			<field type="uint16_t" name="rpm" units="rpm">Engine RPM</field>
 			<field type="float" name="temperature" units="C">Temperatura del motore</field>
-			<field type="int64_t" name="MissionTime" units="s">Numero di secondi trascorsi dall’avvio della missione (si considera a partire dal decollo)</field>
-			<field type="int64_t" name="WPTime" units="s">Numero di secondi trascorsi dall’attraversamento dell’ultimo Waypoint</field>
+			<field type="int64_t" name="MissionTime" units="s">Numero di secondi trascorsi da avvio della missione (si considera a partire dal decollo)</field>
+			<field type="int64_t" name="WPTime" units="s">Numero di secondi trascorsi da attraversamento ultimo Waypoint</field>
 			<field type="uint8_t" enum="FUEL_LEVEL" name="fuelStatus" units="%">Stato del serbatoio dell'UAV</field>
 		</message>
 		<message id="12001" name="VERONTE_RADIO_STATUS">
@@ -90,7 +90,7 @@
 		</message>
 		<message id="12002" name="VERONTE_ERROR">
 			<description>Veronte UAV error information.</description>
-			<field type="uint8_t" name="target_system">Sistema che ha sollevato l'errore</field>
+			<field type="uint8_t" name="target_system">Sistema che ha sollevato errore</field>
 			<field type="float" name="message">Messaggio di errore</field>
 			<field type="uint8_t" name="error" enum="VERONTE_ERROR">Codice errore.</field>
 		</message>
@@ -104,8 +104,8 @@
 		</message>
 		<message id="12100" name="YAAI_STATUS">
 			<description>Veronte UAV information.</description>
-			<field type="int64_t" name="BootTime" units="s">Numero di secondi trascorsi dall’avvio</field>
-			<field type="int64_t" name="ARMTime" units="s">Numero di secondi trascorsi dall'invio del comando ARM</field>
+			<field type="int64_t" name="BootTime" units="s">Numero di secondi trascorsi da avvio</field>
+			<field type="int64_t" name="ARMTime" units="s">Numero di secondi trascorsi da invio del comando ARM</field>
 		</message>
 	</messages>
 </mavlink>
