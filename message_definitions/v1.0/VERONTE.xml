@@ -16,9 +16,9 @@
 		<enum name="MAV_VERONTE_MODE">
 			<description>VERONTE modes.</description>
 			<entry value="0" name="NAVE_MODE_PREFLIGHT"></entry>
-			<entry value="24" name="NAVE_MODE_AUTO"></entry>
-			<entry value="66" name="NAVE_MODE_MANUAL"></entry>
-			<entry value="82" name="NAVE_MODE_ARCADE"></entry>
+			<entry value="25" name="NAVE_MODE_AUTO"></entry>
+			<entry value="67" name="NAVE_MODE_MANUAL"></entry>
+			<entry value="81" name="NAVE_MODE_ARCADE"></entry>
 			<entry value="83" name="NAVE_MODE_SEMIARCADE"></entry>	
 		</enum>
 		<enum name="MAV_VERONTE_CUSTOM_MODE">
