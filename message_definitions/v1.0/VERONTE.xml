@@ -21,6 +21,20 @@
 			<entry value="81" name="NAVE_MODE_ARCADE"></entry>
 			<entry value="83" name="NAVE_MODE_SEMIARCADE"></entry>	
 		</enum>
+		<enum name="MAV_VERONTE_PARAMETERS">
+			<description>Veronte parameters.</description>
+			<entry value="0" name="CAL_MSL"></entry>
+			<entry value="1" name="CAL_AGL"></entry>
+			<entry value="2" name="CAL_TEMP"></entry>
+			<entry value="3" name="HOVER_RPM"></entry>
+			<entry value="4" name="CRUISE_SPEED"></entry>
+			<entry value="5" name="LOITER_SPEED"></entry>
+			<entry value="6" name="RTH_SPEED"></entry>
+			<entry value="7" name="LOITER_RADIUS"></entry>
+			<entry value="8" name="LOITER_TIME"></entry>
+			<entry value="9" name="TKO_ALTITUDE"></entry>
+			<entry value="10" name="MAX_VERTICAL_SPEED"></entry>	
+		</enum>
 		<enum name="MAV_VERONTE_CUSTOM_MODE">
 			<description>VERONTE custom modes.</description>
 			<entry value="0" name="NAVE_CUSTOM_MODE_STANDBY"></entry>
